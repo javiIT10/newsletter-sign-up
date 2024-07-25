@@ -20,5 +20,99 @@
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
   </head>
-  <body></body>
+  <body class="bg-charcoal-grey h-dvh grid place-items-center font-roboto">
+    <div
+      class="bg-white pb-[23px] w-[375px] lg:w-[926px] lg:rounded-[30px] lg:flex lg:flex-row-reverse lg:justify-between items-center lg:pb-0"
+    >
+      <img
+        src="assets/images/illustration-sign-up-mobile.svg"
+        alt="illustration-sign-up-mobile"
+        class="lg:hidden"
+      />
+      <img
+        src="assets/images/illustration-sign-up-desktop.svg"
+        alt="illustration-sign-up-desktop"
+        class="hidden lg:block"
+      />
+
+      <section class="px-[24px] mt-[30px] lg:px-[64px] lg:mt-0">
+        <h1 class="text-[38px] lg:text-[55px] font-bold text-dark-slate-grey">
+          Stay updated!
+        </h1>
+        <p class="text-[16px] leading-snug text-dark-slate-grey mt-[15px]">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+
+        <ul
+          class="text-dark-slate-grey text-[16px] flex flex-col gap-[12px] mt-[27px] mb-[42px]"
+        >
+          <li class="flex items-start gap-[15px]">
+            <img src="assets/images/icon-list.svg" alt="icon-list" />
+            <p>Product discovery and building what matters</p>
+          </li>
+          <li class="flex items-start gap-[15px]">
+            <img src="assets/images/icon-list.svg" alt="icon-list" />
+            <p>Measuring to ensure updates are a success</p>
+          </li>
+          <li class="flex items-start gap-[15px]">
+            <img src="assets/images/icon-list.svg" alt="icon-list" />
+            <p>And much more!</p>
+          </li>
+        </ul>
+
+        <form action="">
+          <label for="email" class="text-dark-slate-grey font-bold text-[13px]"
+            >Email address</label
+          >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@company.com"
+            class="block text-[16px] placeholder:text-grey py-[18px] px-[23px] border border-grey rounded-lg w-full mt-[8px] mb-[23px]"
+          />
+
+          <input
+            type="submit"
+            value="Subscribe to monthly newsletter"
+            class="bg-dark-slate-grey block w-full rounded-lg py-[18px] px-[23px] text-white font-bold cursor-pointer"
+          />
+        </form>
+      </section>
+    </div>
+
+    <div
+      class="bg-charcoal-grey w-dvw grid place-items-center transla h-dvh absolute z-20 transition-all -translate-x-full"
+    >
+      <div
+        class="bg-white w-[375px] h-full lg:h-[519px] lg:w-[503px] lg:rounded-[30px] px-[24px] lg:p-[65px] flex flex-col justify-between pb-[39px] lg:pb-[63px] pt-[148px] lg:pt-[47px]"
+      >
+        <div>
+          <img
+            src="assets/images/icon-success.svg"
+            alt="icon-success"
+            class="w-[65px]"
+          />
+          <h2
+            class="text-[38px] lg:text-[55px] font-bold text-dark-slate-grey leading-none mt-[42px] mb-[25px]"
+          >
+            Thanks for subscribing!
+          </h2>
+          <p class="text-[16px] leading-snug text-dark-slate-grey">
+            A confirmation email has been sent to
+            <span class="font-bold text-dark-slate-grey" id="emailField"
+              >ash@loremcompany.com</span
+            >. Please open it and click the button inside to confirm your
+            subscription.
+          </p>
+        </div>
+
+        <button
+          class="bg-dark-slate-grey block w-full rounded-lg py-[18px] px-[23px] text-white font-bold cursor-pointer"
+        >
+          Dismiss message
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
