@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html, js}"],
+  content: ["./assets/js/app.js", "./index.html"],
   theme: {
     extend: {
       fontFamily: {
@@ -8,7 +8,7 @@ module.exports = {
       },
       colors: {
         /* ### Primary */
-        Tomato: "hsl(4, 100%, 67%)",
+        tomato: "hsl(4, 100%, 67%)",
 
         /* ### Neutral */
         "dark-slate-grey": "hsl(234, 29%, 20%)",

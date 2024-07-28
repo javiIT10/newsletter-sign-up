@@ -22,6 +22,7 @@
   </head>
   <body class="bg-charcoal-grey h-dvh grid place-items-center font-roboto">
     <div
+      id="main"
       class="bg-white pb-[23px] w-[375px] lg:w-[926px] lg:rounded-[30px] lg:flex lg:flex-row-reverse lg:justify-between items-center lg:pb-0"
     >
       <img
@@ -61,15 +62,19 @@
         </ul>
 
         <form action="">
-          <label for="email" class="text-dark-slate-grey font-bold text-[13px]"
-            >Email address</label
-          >
+          <div class="flex justify-between">
+            <label
+              for="email"
+              class="text-dark-slate-grey font-bold text-[13px]"
+              >Email address</label
+            >
+          </div>
           <input
-            type="email"
+            type="text"
             name="email"
             id="email"
             placeholder="email@company.com"
-            class="block text-[16px] placeholder:text-grey py-[18px] px-[23px] border border-grey rounded-lg w-full mt-[8px] mb-[23px]"
+            class="block text-[16px] py-[18px] px-[23px] border rounded-lg w-full mt-[8px] mb-[23px] placeholder:text-grey border-grey outline-none"
           />
 
           <input
@@ -82,7 +87,8 @@
     </div>
 
     <div
-      class="bg-charcoal-grey w-dvw grid place-items-center transla h-dvh absolute z-20 transition-all -translate-x-full"
+      id="modalMessage"
+      class="bg-charcoal-grey w-dvw grid place-items-center h-dvh absolute z-20 transition-all translate-x-full"
     >
       <div
         class="bg-white w-[375px] h-full lg:h-[519px] lg:w-[503px] lg:rounded-[30px] px-[24px] lg:p-[65px] flex flex-col justify-between pb-[39px] lg:pb-[63px] pt-[148px] lg:pt-[47px]"
@@ -108,11 +114,14 @@
         </div>
 
         <button
+          id="btnDismissMessage"
           class="bg-dark-slate-grey block w-full rounded-lg py-[18px] px-[23px] text-white font-bold cursor-pointer"
         >
           Dismiss message
         </button>
       </div>
     </div>
+
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
