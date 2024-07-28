@@ -857,6 +857,10 @@ video {
     padding: 65px;
   }
 
+  .lg\:p-\[23px\]{
+    padding: 23px;
+  }
+
   .lg\:px-\[64px\]{
     padding-left: 64px;
     padding-right: 64px;
